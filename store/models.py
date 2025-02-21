@@ -74,7 +74,7 @@ class Order(models.Model):
     total = models.FloatField()
 
 class Sale(models.Model):
-    id = models.AutoField(primary_key=True)\
+    id = models.AutoField(primary_key=True)
     # uuid
     date = models.DateField()
     client = models.ForeignKey(Client, on_delete=models.RESTRICT)
